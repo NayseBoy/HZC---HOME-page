@@ -1,0 +1,70 @@
+@import url(../css/cabeçalho.css);
+@import url(../css/menu-lateral.css);
+@import url(../css/principal.css);
+
+@font-face {
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
+
+:root {
+
+    /* CORES */
+
+    --corpo: #1d232a;
+    --cabecalho:#1d232a;
+    --cabecalho-mobile: #15191c;
+    --menu-lateral: #15191c;
+    --cartao: #2C343A;
+    --cor-fonte: #FFFFFF;
+    --fonte-alternativa: #95999c;
+    --links: #0480dc;
+    --botao: #0480dc;
+    --sombras: 0px 4px 4px rgba(0, 0, 0, 0.16);
+
+    /* ICONES.TTF */
+
+    --camisas: "\e900";
+    --carrinho: "\e901";
+    --inicio: "\e902";
+    --integrantes: "\e903";
+    --menu: "\e904";
+    --moeda: "\e905";
+    --notificacao: "\e906";
+    --pico: "\e908";
+    --picos: "\e909";
+    --pinturas: "\e90a";
+    --play: "\e90b";
+    --relogio: "\e90c";
+    --seta-baixo: "\e90d";
+    --videos: "\e90e";
+    --visualizacao: "\e90f";
+
+    /* ESPAÇAMENTOS */
+
+    --interno-botao: 8px;
+    --entre-elementos-do-botao: 8px;
+    --interno-do-corpo: 16px;
+    --entre-titulo-cartao-de-recentes-e-items: 24px;
+
+    /* TAMANHOS */
+
+    --dispositivo-mobile: 360px;
+    --dispositivo-desktop: 1440px;
+    --largura-maxima-conteudo-principal: 1120px;
+    --largura-maxima-cartao-desktop: 256px;
+    --altura-minima-cartao: 320px;
+}
+
+body {
+    background-color: var(--corpo);
+    font-family: 'Open Sans', 'icones', sans-serif;
+    color: var(--cor-fonte);
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+}
